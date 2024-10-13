@@ -6,6 +6,8 @@
 //
 import SwiftUI
 
+let mccAutoDpt: String = "(815) 479-7521" // MCC automotive department phone number
+
 struct CustomCalendar: View {
     @State private var availableDates: [Date] = []
     @State private var selectedDate: Date?
@@ -55,12 +57,12 @@ struct CustomCalendar: View {
                 
                 // Calendar and Toggle for Future Dates
                 VStack {
-//                    Toggle("Show Only Future Dates", isOn: $showOnlyFutureDates)
-//                        .padding()
-//                    
-//                    Text("Select a Date")
-//                        .font(.largeTitle)
-//                        .padding()
+                    Toggle("Show Only Future Dates", isOn: $showOnlyFutureDates)
+                        .padding()
+                    
+                    Text("Select a Date")
+                        .font(.largeTitle)
+                        .padding()
                     
                     // Adding padding around the calendar
                     VStack {
@@ -128,6 +130,35 @@ struct CustomCalendar: View {
                     .padding(.leading, 20)
                     
                     Spacer()
+                    
+                    Button(action: {
+                        // this will make a call to the MCC auto department
+                        if let url = URL(string: "tel:\(mccAutoDpt)") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        Image(systemName: "phone.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(Color(red: 74/255, green: 49/255, blue: 144/255))
+                            .padding()
+                    }
+                    
+                    Spacer()
+                    
+                    // Inbox Button (Newly Added)
+                        Button(action: {
+                            // Action for inbox button
+                        }) {
+                            Image(systemName: "envelope.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(.black)
+                                .padding()
+                        }
+                        
+                        Spacer() // Adds space between Inbox and Calendar buttons
+                        
                     
                     // Calendar Button
                     Button(action: {

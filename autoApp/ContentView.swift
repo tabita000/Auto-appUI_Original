@@ -41,7 +41,7 @@ struct ContentView: View {
                 // Admin Toggle and Email/Password Fields
                 VStack(spacing: 10) {
                     
-                   
+                    
                     
                     // Admin Toggle
                     HStack {
@@ -58,7 +58,7 @@ struct ContentView: View {
                         .labelsHidden() // Hide the default toggle label
                         .toggleStyle(SwitchToggleStyle(tint: .black))
                     }
-                    .padding(.trailing, 20) 
+                    .padding(.trailing, 20)
                     
                     
                     // Email and Password Fields
@@ -141,48 +141,6 @@ struct ContentView: View {
                     Spacer()
                 }
                 
-                // Toolbar--home and calender
-                VStack {
-                    Spacer()
-                    HStack {
-                        // Home Button
-                        Button(action: {
-                            // Action for home button
-                        }) {
-                            HStack {
-                                Image(systemName: "house.fill")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                
-                            }
-                            .font(.headline)
-                            .foregroundColor(.black)
-                            .padding()
-                        }
-                        
-                        .padding(.leading, 20)
-                        
-                        Spacer()
-                        
-                        // Calendar Button
-                        Button(action: {
-                            // Action for calendar button
-                        }) {
-                            HStack {
-                                Image(systemName: "calendar")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                
-                            }
-                            .font(.headline)
-                            .foregroundColor(.blue)
-                            .padding()
-                        }
-                        
-                        .padding(.trailing, 20)
-                    }
-                    .padding(.bottom, 20)
-                }
             }
         }
     }

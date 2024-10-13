@@ -16,6 +16,8 @@
 		220BB48A2CA5E1B700C9D561 /* autoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB4892CA5E1B700C9D561 /* autoAppTests.swift */; };
 		220BB4942CA5E1B700C9D561 /* autoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB4932CA5E1B700C9D561 /* autoAppUITests.swift */; };
 		220BB4962CA5E1B700C9D561 /* autoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB4952CA5E1B700C9D561 /* autoAppUITestsLaunchTests.swift */; };
+		2294ED1E2CB861710024DA66 /* bookingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294ED1D2CB861650024DA66 /* bookingForm.swift */; };
+		2294ED5B2CB8AB710024DA66 /* disclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294ED5A2CB8AB5C0024DA66 /* disclaimer.swift */; };
 		22D8F3492CAEFE3600E5133B /* CustomCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8F3482CAEFE1F00E5133B /* CustomCalender.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		220BB48F2CA5E1B700C9D561 /* autoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		220BB4932CA5E1B700C9D561 /* autoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoAppUITests.swift; sourceTree = "<group>"; };
 		220BB4952CA5E1B700C9D561 /* autoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2294ED1D2CB861650024DA66 /* bookingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookingForm.swift; sourceTree = "<group>"; };
+		2294ED5A2CB8AB5C0024DA66 /* disclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disclaimer.swift; sourceTree = "<group>"; };
 		22D8F3482CAEFE1F00E5133B /* CustomCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 				220BB4732CA5E1B600C9D561 /* autoAppApp.swift */,
 				220BB4752CA5E1B600C9D561 /* ContentView.swift */,
 				22D8F3482CAEFE1F00E5133B /* CustomCalender.swift */,
+				2294ED1D2CB861650024DA66 /* bookingForm.swift */,
+				2294ED5A2CB8AB5C0024DA66 /* disclaimer.swift */,
 				220BB4772CA5E1B700C9D561 /* Assets.xcassets */,
 				220BB47C2CA5E1B700C9D561 /* Persistence.swift */,
 				220BB47E2CA5E1B700C9D561 /* autoApp.xcdatamodeld */,
@@ -224,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 220BB4672CA5E1B600C9D561;
+			packageReferences = (
+				2294ED972CBB517E0024DA66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 220BB4712CA5E1B600C9D561 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,7 +278,9 @@
 				220BB47D2CA5E1B700C9D561 /* Persistence.swift in Sources */,
 				220BB4762CA5E1B600C9D561 /* ContentView.swift in Sources */,
 				220BB4802CA5E1B700C9D561 /* autoApp.xcdatamodeld in Sources */,
+				2294ED1E2CB861710024DA66 /* bookingForm.swift in Sources */,
 				220BB4742CA5E1B600C9D561 /* autoAppApp.swift in Sources */,
+				2294ED5B2CB8AB710024DA66 /* disclaimer.swift in Sources */,
 				22D8F3492CAEFE3600E5133B /* CustomCalender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +607,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2294ED972CBB517E0024DA66 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		220BB47E2CA5E1B700C9D561 /* autoApp.xcdatamodeld */ = {
